@@ -7,6 +7,9 @@
     align-items: center;
     gap: 20px;
 
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
 
     &__sobremim {
         width: 60%;
@@ -15,6 +18,15 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 10px;
+
+        @media (max-width: 768px) {
+            align-items: center;
+            width: 100%;
+            p {
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
     }
 
     &__leo{
@@ -25,6 +37,12 @@
         justify-content: center;
         align-items: center;
         gap: 50px;
+
+        @media (max-width: 768px) {
+            padding-top: 10vw;
+            width: 100%;
+            gap: 20px;
+        }
 
         &__links {
             display: flex;
@@ -51,6 +69,11 @@
         transition: all 1s ease-in-out;
         width: 23vw;
         z-index: 5;
+
+        @media (max-width: 768px) {
+            width: 70vw;
+            height: 70vw;
+        }
         }
         
         @keyframes morph {

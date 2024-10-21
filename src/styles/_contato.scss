@@ -9,6 +9,9 @@
     h1 {
         width: 70%;
         text-align: center;
+        @media (max-width: 768px) {
+            width: 50%;
+        }
     }
 
     &__container {
@@ -16,6 +19,11 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 2vw;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10vw;
+        }
 
         &__item {
             display: flex;
@@ -35,9 +43,18 @@
                 align-items: center;
                 justify-content: center;
 
+                @media (max-width: 768px) {
+                    height: 16vw;
+                    width: 16vw;
+                }
+
                 img {
                     width: 100%;
                     max-width: 6vw;
+
+                    @media (max-width: 768px) {
+                        max-width: 11vw;
+                    }
                 }
             }
 
@@ -55,6 +72,10 @@
 .linkedin {
     img {
         max-width: 4.5vw;
+
+        @media (max-width: 768px) {
+            max-width: 9vw;
+        }
     }
 }
 
@@ -63,5 +84,8 @@
 
     img {
         max-width: 5.5vw;
+        @media (max-width: 768px) {
+            max-width: 10vw;
+        }
     }
 }

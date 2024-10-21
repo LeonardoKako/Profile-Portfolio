@@ -11,7 +11,16 @@
     color: var.$branco;
     border-top: 2px solid var.$verdeClaro;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        gap: 3vw;
+    }
+
     p {
         font-size: 16px;
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
     }
 }
