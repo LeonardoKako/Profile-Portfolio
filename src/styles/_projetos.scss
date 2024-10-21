@@ -1,0 +1,123 @@
+@use 'var';
+
+.projetos {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5vw;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7vw;
+
+        &__card {
+            width: 25.3vw;
+            height: 17vw;
+            border-radius: 5px;
+            background-image: url('https://picsum.photos/id/1/1000/800');
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            transition: height 0.3s, border-bottom 0.6s, transform 0.3s;
+
+            .btn {
+                font-size: 13px;
+
+                &:hover {
+                    transform: scale(1);
+                }
+            }
+        
+            &:hover {
+                height: 21vw;
+                border-bottom: 4vw solid var.$verdeEscuro;
+                transform: scale(1.2);
+        
+                .data {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .link-site {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .tela-preta {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                .elementos {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        
+            .data {
+                width: 10vw;
+                height: 2.35vw;
+                position: absolute;
+                left: .8vw;
+                bottom: -3.15vw; 
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.6s;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: var.$branco;
+            }
+
+            .link-site {
+                width: 7vw;
+                height: 2.35vw;
+                position: absolute;
+                border-radius: 5px;
+                right: .8vw;
+                bottom: -3.15vw; 
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 2s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-color: black;
+            }
+
+            .tela-preta {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: .7;
+                background-color: black;
+                transition: opacity 1s;
+                
+            }
+            .elementos{
+                position: absolute;
+                left: 30%;
+                right: 30%;
+                top: 40%;
+                opacity: 1;
+                transition: opacity 1s;
+
+                p {
+                    text-align: center;
+                    color: var.$branco;
+                }
+
+                .linguagens {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1px;
+                    margin-top: 5px;
+                    img {
+                        width: 100%;
+                        max-width: 25px;
+                    }
+                }
+            }
+    }
+}
+}

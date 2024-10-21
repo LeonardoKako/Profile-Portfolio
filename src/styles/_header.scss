@@ -1,0 +1,58 @@
+@use 'var';
+
+.menu-hamburguer-input {
+    display: none;
+}
+
+.header {
+    background-color: var.$branco;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 50px;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .2);
+    z-index: 99;
+    border-bottom: 2px solid var.$verdeEscuro;
+
+.leo {
+    h1 {
+        color: var.$verdeEscuro;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    background-color: var.$branco;
+
+    .item {
+        color: var.$verdeEscuro;
+        transition: all 0.3s;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 0;
+            height: 2px;
+            background-color: var.$verdeClaro;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        &:hover::after {
+            width: 100%;
+        }
+
+        &:hover {
+            color: var.$verdeClaro;
+            scale: 1.15;
+        }
+    }
+}
+
+}

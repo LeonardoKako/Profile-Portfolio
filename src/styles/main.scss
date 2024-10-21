@@ -1,0 +1,96 @@
+@use 'var';
+@use 'header';
+@use 'mobile-header';
+@use 'sobre';
+@use 'habilidades';
+@use 'projetos';
+@use 'contato';
+@use 'footer';
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw;
+}
+
+li {
+    list-style: none;    
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var.$branco;
+}
+
+
+.serif {
+    font-family: "DM Serif Text", serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.serif-sm {
+    font-family: "DM Serif Text", serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.serif-lg {
+    font-family: "DM Serif Text", serif;
+    font-size: 42px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.roboto {
+    font-family: "Roboto", serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.roboto-sm {
+    font-family: "Roboto", serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.btn {
+    width: 100%;
+    max-width: 13vw;
+    padding: 8px;
+    color: black;
+    background-color: var.$verdeClaro;
+    border: 1px solid var.$verdeEscuro;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    transition: all ease .5s;
+
+    &:hover {
+        transform: scale(.95);
+        color: var.$branco;
+        background-color: var.$verdeEscuro;
+        border: 1px solid var.$verdeClaro;
+    }
+}
+
+.title {
+    border-bottom: 4px solid var.$verdeEscuro;
+    color: var.$verdeEscuro;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}

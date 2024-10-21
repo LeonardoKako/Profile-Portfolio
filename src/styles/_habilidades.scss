@@ -1,0 +1,46 @@
+@use 'var';
+
+.habilidades {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5vw;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 4vw;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 11vw;
+            height: 11vw;
+            padding: 0.5vw;
+            background-color: var.$verdeEscuro;
+            border-radius: 5px;
+            transition: all ease .3s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            h1 {
+                color: var.$azulClaro;
+            }
+
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.sass {
+    gap: .7vw;
+    padding-bottom: 2vw;
+}
+
