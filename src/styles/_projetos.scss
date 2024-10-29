@@ -23,13 +23,31 @@
 
         &__card {
             width: 25.3vw;
-            height: 17vw;
+            height: 15vw;
             border-radius: 5px;
-            background-image: url('https://picsum.photos/id/1/1000/800');
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
             transition: height 0.3s, border-bottom 0.6s, transform 0.3s;
+
+            &:nth-child(1) {
+                background-image: url('../../assets/projetos/projeto-1.png');
+            }
+            &:nth-child(2) {
+                background-image: url('../../assets/projetos/projeto-2.png');
+            }
+            &:nth-child(3) {
+                background-image: url('../../assets/projetos/projeto-3.png');
+            }
+            &:nth-child(4) {
+                background-image: url('../../assets/projetos/projeto-4.png');
+            }
+            &:nth-child(5) {
+                background-image: url('../../assets/projetos/projeto-5.png');
+            }
+            &:nth-child(6) {
+                background-image: url('../../assets/projetos/projeto-6.png');
+            }
 
             @media (max-width: 768px) {
                 width: 84vw;
@@ -45,7 +63,7 @@
             }
         
             &:hover {
-                height: 21vw;
+                height: 19vw;
                 border-bottom: 4vw solid var.$verdeEscuro;
                 transform: scale(1.2);
 

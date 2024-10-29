@@ -19,6 +19,10 @@
         align-items: flex-start;
         gap: 10px;
 
+        p {
+            margin-bottom: 2vh;
+        }
+
         @media (max-width: 768px) {
             align-items: center;
             width: 100%;
@@ -60,7 +64,7 @@
             }
         }
         &__foto {
-        background-image: url('https://picsum.photos/id/1/1000/1000');
+        background-image: url('../../assets/leonardo.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
         animation: morph 8s ease-in-out infinite;
